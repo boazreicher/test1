@@ -31,9 +31,9 @@ body:
     attributes:
       label: Pronouns
       options:
-        - she/her/hers
-        - he/him/his
-        - they/them
+        - "she/her/hers"
+        - "he/him/his"
+        - "they/them"
     validations:
       required: true
   
