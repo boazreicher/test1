@@ -10,6 +10,22 @@ body:
        value: |
          Thanks for requesting to be a speaker! We're excited to get to know you and get you ready to share about GitHub at conferences and events!
   
+  - id: name
+    type: input
+    attributes: 
+      label: First & Last Name
+      description: "Your full name as you would like it displayed on a conference website or name badge"
+      placeholder: Mona Lisa Octocat
+    validations:
+      required: true
+
+  - id: social
+    type: input
+    attributes:
+      label: Social Media account
+      description: "If you have a Twitter account that you'd like to use as a public persona when speaking. This field is optional!"
+      placeholder: monatheoctocat
+
   - id: pronouns
     type: dropdown
     attributes:
@@ -52,6 +68,16 @@ body:
       label: Bio
       description: "Conferences often ask for short bios for speakers. Please share a short 2-3 sentence blurb about you!"
 
+  - id: travel
+    type: dropdown
+    attributes:
+      label: Would you be willing to travel?
+      options:
+       - "Yes, send me anywhere, even internationally!"
+       - "Yes, I'm willing to fly within my country or state"
+       - "Yes, but I'd prefer to stay local (i.e. driving distance only)"
+       - "No, I'd prefer to participate in virtual events only"
+
   - id: experience
     type: input
     attributes:
@@ -59,10 +85,95 @@ body:
       description: On a scale of 1-5, 1 being novice and 5 being expert
   
   - id: previous-events
+    type: checkboxes
+    attributes:
+      label: What are the types of events you've participated in before?
+      options:
+       - "Panel interview (interviewer)"
+       - "Panel interview (interviewee)"
+       - "Workshop/Seminar"
+       - "Featured/Keynote Speaker"
+       - "Live Demo"
+       - "Booth Staff"
+       - "None yet!"
+
+  - id: links
+    type: textarea
+    attributes:
+      label: Links to previous presentations
+      description: Do you have links to previous talks you've given (demos, podcast interviews, etc.) or online portfolios relevant to your speaking interests?
+  
+  - id: github-topics
+    type: checkboxes
+    attributes:
+      label: General topics you feel most confident speaking about/presenting
+      options:
+       - "Accessibility"
+       - "APIs"
+       - "CI/CD"
+       - "Cloud/Serverless infrastructure"
+       - "DevOps"
+       - "Enterprise"
+       - "Git"
+       - "Open Source"
+       - "Languages/Frameworks (i.e. GoLang, React, etc.)"
+       - "People Management/Career Development"
+       - "Security"
+       - "Other"
+    
+  - id: github-products
+    type: checkboxes
+    attributes:
+      label: GitHub-specific products you could confidently speak/present about
+      options:
+        - "Actions & Workflow Best Practices"
+        - "Advanced Security Products (i.e. Dependabot, Secret scanning, Code scanning)"
+        - "GitHub Apps / APIs"
+        - "Codespaces"
+        - "Copilot"
+        - "GitHub Desktop"
+        - "GitHub Enterprise Cloud / Enterprise Server"
+        - "GitHub Mobile"
+        - "Planning / Tracking"
+        - "Repositories / Issues / Pull Requests"
+        - "Other"
+    
+  - id: additional-topics
+    type: textarea
+    attributes:
+      label: If you selected Other for any of the above, please share more topics here
+    
+  - id: types-of-events
+    type: checkboxes
+    attributes:
+      label: Types of events you'd like to participate in
+      options:
+        - "Lead an interview (either 1-1 or a panel)"
+        - "Be interviewed (either 1-1 or a panel)"
+        - "Host a workshop/seminar"
+        - "Featured/Keynote speaker"
+        - "Give a live demo"
+        - "Staff a booth"
+        - "Any of the above"
+    validations:
+       required: true
+      
+  - id: mentorship
     type: dropdown
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: If you're a seasoned speaker, would you be willing to mentor a novice? 
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - "Yes"
+        - "No"
+        - "Maybe, but I'd like to learn more about what is expected of me"
+        - "I'm a novice"
+
+  - id: speaker-training
+    type: dropdown
+    attributes:
+      label: Would you be open to participating in free speaker training?
+      options: 
+        - "Yes"
+        - "No"
+    validations:
+      required: true
