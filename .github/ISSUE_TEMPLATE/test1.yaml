@@ -68,16 +68,6 @@ body:
       label: Bio
       description: "Conferences often ask for short bios for speakers. Please share a short 2-3 sentence blurb about you!"
 
-  - id: travel
-    type: dropdown
-    attributes:
-      label: Would you be willing to travel?
-      options:
-       - "Yes, send me anywhere, even internationally!"
-       - "Yes, I'm willing to fly within my country or state"
-       - "Yes, but I'd prefer to stay local (i.e. driving distance only)"
-       - "No, I'd prefer to participate in virtual events only"
-
   - id: experience
     type: input
     attributes:
