@@ -58,3 +58,16 @@ body:
       label: How would you rate your speaking experience?
       description: On a scale of 1-5, 1 being novice and 5 being expert
   
+   - id: previous-events
+    type: checkboxes
+    attributes:
+      label: What are the types of events you've participated in before?
+      options:
+       - "Panel interview (interviewer)"
+       - "Panel interview (interviewee)"
+       - "Workshop/Seminar"
+       - "Featured/Keynote Speaker"
+       - "Live Demo"
+       - "Booth Staff"
+       - "None yet!"
+
