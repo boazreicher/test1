@@ -86,9 +86,3 @@ body:
        - "Live Demo"
        - "Booth Staff"
        - "None yet!"
-
-  - id: links
-    type: textarea
-    attributes:
-      label: Links to previous presentations
-      description: Do you have links to previous talks you've given (demos, podcast interviews, etc.) or online portfolios relevant to your speaking interests?
