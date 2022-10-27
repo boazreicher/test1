@@ -89,13 +89,14 @@ body:
     attributes:
       label: What are the types of events you've participated in before?
       options:
-       - "Panel interview (interviewer)"
-       - "Panel interview (interviewee)"
-       - "Workshop/Seminar"
-       - "Featured/Keynote Speaker"
-       - "Live Demo"
-       - "Booth Staff"
-       - "None yet!"
+       - label: "I agree to follow this project's Code of Conduct"
+       - label: "Panel interview (interviewer)"
+       - label: "Panel interview (interviewee)"
+       - label: "Workshop/Seminar"
+       - label: "Featured/Keynote Speaker"
+       - label: "Live Demo"
+       - label: "Booth Staff"
+       - label: "None yet!"
 
   - id: links
     type: textarea
