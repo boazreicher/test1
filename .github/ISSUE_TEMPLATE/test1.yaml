@@ -65,9 +65,3 @@ body:
       options:
        - "Panel interview (interviewer)"
        - "Panel interview (interviewee)"
-       - "Workshop/Seminar"
-       - "Featured/Keynote Speaker"
-       - "Live Demo"
-       - "Booth Staff"
-       - "None yet!"
-
