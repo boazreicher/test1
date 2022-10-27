@@ -10,22 +10,6 @@ body:
        value: |
          Thanks for requesting to be a speaker! We're excited to get to know you and get you ready to share about GitHub at conferences and events!
   
-  - id: name
-    type: input
-    attributes: 
-      label: First & Last Name
-      description: "Your full name as you would like it displayed on a conference website or name badge"
-      placeholder: Mona Lisa Octocat
-    validations:
-      required: true
-
-  - id: social
-    type: input
-    attributes:
-      label: Social Media account
-      description: "If you have a Twitter account that you'd like to use as a public persona when speaking. This field is optional!"
-      placeholder: monatheoctocat
-
   - id: pronouns
     type: dropdown
     attributes:
