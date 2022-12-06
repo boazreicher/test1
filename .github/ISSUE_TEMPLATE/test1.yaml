@@ -62,7 +62,7 @@ body:
     validations: 
       required: true
   
-  - id: bio
+  - id: action
     type: textarea
     attributes:
       label: Bio
